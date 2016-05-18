@@ -1,66 +1,66 @@
-Genesis
-Exodus
-Leviticus
-Numbers
-Deuteronomy
-Joshua
-Judges
-Ruth
-1 Samuel
-2 Samuel
-1 Kings
-2 Kings
-1 Chronicles
-2 Chronicles
-Ezra
-Nehemiah
-Esther
-Job
-Psalms
-Provers
-Ecclesiastes
-Song of Solomon
-Isaiah
-Jeremiah
-Lamentations
-Ezekiel
-Daniel
-Hosea
-Joel
-Amos
-Obadiah
-Jonah
-Micah
-Nahum
-Habakkuk
-Zephaniah
-Haggai
-Zechariah
-Malachi
-Matthew
-Mark
-Luke
-John
-Acts
-Romans
-1 Corinthians
-2 Corinthians
-Galatians
-Ephesians
-Philippians
-Colossians
-1 Thessalonians
-2 Thessalonians
-1 Timothy
-2 Timothy
-Titus
-Philemon
-Hebrews
-James
-1 Peter
-2 Peter
-1 John
-2 John
-3 John
-Jude
-Revelation
+Gen Genesis
+Exo Exodus
+Lev Leviticus
+Num Numbers
+Deu Deuteronomy
+Jos Joshua
+Jdg Judges
+Rut Ruth
+1Sa 1Samuel
+2Sa 2Samuel
+1Ki 1Kings
+2Ki 2Kings
+1Ch 1Chronicles
+2Ch 2Chronicles
+Ezr Ezra
+Neh Nehemiah
+Est Esther
+Job Job
+Psa Psalms
+Pro Provers
+Ecc Ecclesiastes
+Son SongofSolomon
+Isa Isaiah
+Jer Jeremiah
+Lam Lamentations
+Eze Ezekiel
+Dan Daniel
+Hos Hosea
+Joe Joel
+Amo Amos
+Oba Obadiah
+Jon Jonah
+Mic Micah
+Nah Nahum
+Hab Habakkuk
+Zep Zephaniah
+Hag Haggai
+Zec Zechariah
+Mal Malachi
+Mat Matthew
+Mar Mark
+Luk Luke
+Joh John
+Act Acts
+Rom Romans
+1Co 1Corinthians
+2Co 2Corinthians
+Gal Galatians
+Eph Ephesians
+Php Philippians
+Col Colossians
+1Th 1Thessalonians
+2Th 2Thessalonians
+1Ti 1Timothy
+2Ti 2Timothy
+Tit Titus
+Phm Philemon
+Heb Hebrews
+Jam James
+1Pe 1Peter
+2Pe 2Peter
+1Jo 1John
+2Jo 2John
+3Jo 3John
+Jde Jude
+Rev Revelation
