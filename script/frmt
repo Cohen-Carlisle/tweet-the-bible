@@ -14,15 +14,18 @@ def following_verse?(c1, v1, c2, v2)
   ((c2 == c1) && (v2 == v1 + 1)) || ((c2 == c1 + 1) && v2 == 1)
 end
 
-file = "bible/" + ARGV[0]
-raise "#{file} is not a file" unless File.file?(file)
+files = Dir.glob(ARGV[0])
+raise "found no files" if files.empty?
 
-formatted = File.read(file).
+files.each do |file|
+  puts "formatting file #{file}"
+  formatted = File.read(file).
               sub(/\A[[:space:]]+/, '').
               sub(/[[:space:]]+\z/, '').
               gsub(/[[:space:]]+/, ' ').
               gsub(/\s+(\d+:\d+)/, "\n\\1")
 
-verify_format!(formatted)
+  verify_format!(formatted)
 
-File.open(file, "w+").puts(formatted)
+  File.open(file, "w+").puts(formatted)
+end
