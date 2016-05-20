@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+def verify_format!(string)
+  string.split("\n").each_cons(2) do |line1, line2|
+    chap1, verse1 = line1[/^\d+:\d+/].split(":").map! { |s| Integer(s) }
+    chap2, verse2 = line2[/^\d+:\d+/].split(":").map! { |s| Integer(s) }
+    unless following_verse?(chap1, verse1, chap2, verse2)
+      raise "ill-formatted: (#{chap1}:#{verse1} -> #{chap2}:#{verse2})"
+    end
+  end
+end
+
+def following_verse?(c1, v1, c2, v2)
+  ((c2 == c1) && (v2 == v1 + 1)) || ((c2 == c1 + 1) && v2 == 1)
+end
+
+file = "bible/" + ARGV[0]
+raise "#{file} is not a file" unless File.file?(file)
+
+formatted = File.read(file).
+              sub(/\A[[:space:]]+/, '').
+              sub(/[[:space:]]+\z/, '').
+              gsub(/[[:space:]]+/, ' ').
+              gsub(/\s+(\d+:\d+)/, "\n\\1")
+
+verify_format!(formatted)
+
+File.open(file, "w+").puts(formatted)
