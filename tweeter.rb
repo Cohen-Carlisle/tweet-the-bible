@@ -45,7 +45,7 @@ class Tweeter
     # TODO handle response
     puts response.code
     pp JSON.parse(response.body) unless response.code == '200'
-    sleep 0.6
+    sleep 36
   end
 
   def handle_last_tweet_length(array, header_length)
