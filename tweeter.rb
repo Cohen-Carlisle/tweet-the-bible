@@ -8,11 +8,14 @@ require 'pp'
 # verses = File.readlines("./bible/62-1Jo")
 # verses.each { |verse| tweeter.tweet(verse) }
 
+# TODO:
+# Split on period. Recombine where possible.
+# If any sentence over 140, split on other punct, recombine where possible.
+# If still over, split near middle word.
 class Tweeter
   BASE_URI = 'https://api.twitter.com/1.1/statuses/update.json?'
 
   def initialize
-    # TODO stop loading all this stuff every time
     oauth = YAML.load(File.open('oauth.yaml'))
     consumer = OAuth::Consumer.new(oauth['consumer_key'], oauth['consumer_secret'])
     @token = OAuth::AccessToken.new(consumer, oauth['token'], oauth['token_secret'])
