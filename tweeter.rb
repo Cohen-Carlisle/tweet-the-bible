@@ -4,6 +4,10 @@ require 'uri'
 require 'json'
 require 'pp'
 
+# tweeter = Tweeter.new
+# verses = File.readlines("./bible/62-1Jo")
+# verses.each { |verse| tweeter.tweet(verse) }
+
 class Tweeter
   BASE_URI = 'https://api.twitter.com/1.1/statuses/update.json?'
 
@@ -27,6 +31,8 @@ class Tweeter
       end
     end
   end
+
+  # private
 
   def split_tweets(verse, header_length, ary)
     upto = 140 - header_length - 6 # 6 is for paging
